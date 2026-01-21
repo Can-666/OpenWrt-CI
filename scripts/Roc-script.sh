@@ -13,7 +13,7 @@ sed -i "s/hostname='.*'/hostname='OpenWrt'/g" package/base-files/files/bin/confi
 #                href: 'https://github.com/Lang-Ke/OpenWrt-ORC/releases',\n \
 #                target: '_blank',\n \
 #                rel: 'noopener noreferrer'\n \
-#                }, [ 'Built by Roc $(date "+%Y-%m-%d %H:%M:%S")' ])\n \
+#                }, [ 'Built by Can $(date "+%Y-%m-%d %H:%M:%S")' ])\n \
 #            ]),#" feeds/luci/modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js
 
 # 移除luci-app-attendedsysupgrade软件包
@@ -68,6 +68,8 @@ git clone --depth=1 https://github.com/sbwml/luci-app-openlist2 package/openlist
 git clone --depth=1 https://github.com/gdy666/luci-app-lucky package/luci-app-lucky
 git clone --depth=1 https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
 git clone --depth=1 https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+git clone --depth=1 https://github.com/sirpdboy/luci-app-netspeedtest package/netspeedtest
+
 chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led package/luci-app-athena-led/root/usr/sbin/athena-led
 
 ### PassWall & OpenClash ###
