@@ -10,7 +10,7 @@ sed -i "s/hostname='.*'/hostname='OpenWrt'/g" package/base-files/files/bin/confi
 #                ? boardinfo.release.description + ' / '\n \
 #                : '') + (luciversion || '') + ' / ',\n \
 #            E('a', {\n \
-#                href: 'https://github.com/Lang-Ke/OpenWrt-ORC/releases',\n \
+#                href: 'https://github.com/Can-666/OpenWrt-CI/releases',\n \
 #                target: '_blank',\n \
 #                rel: 'noopener noreferrer'\n \
 #                }, [ 'Built by Can $(date "+%Y-%m-%d %H:%M:%S")' ])\n \
@@ -68,7 +68,7 @@ git clone --depth=1 https://github.com/sbwml/luci-app-openlist2 package/openlist
 git clone --depth=1 https://github.com/gdy666/luci-app-lucky package/luci-app-lucky
 git clone --depth=1 https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
 git clone --depth=1 https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
-git clone --depth=1 https://github.com/sirpdboy/luci-app-netspeedtest package/netspeedtest
+git clone --depth=1 https://github.com/sirpdboy/luci-app-netspeedtest package/luci-app-netspeedtest
 
 chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led package/luci-app-athena-led/root/usr/sbin/athena-led
 
@@ -81,8 +81,6 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages packa
 # 移除 OpenWrt Feeds 过时的LuCI版本
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-openclash
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
 git clone --depth=1 https://github.com/vernesong/OpenClash package/luci-app-openclash
 
 # 清理 PassWall 的 chnlist 规则文件
